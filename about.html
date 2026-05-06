@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — OAK Creations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Tenor+Sans&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/inner.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/oak-tree.png" alt="OAK" class="nav-logo-icon" />
+        <span class="nav-logo-text">OAK <em>Creations</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Works</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="oak.html" class="nav-link">The Creator</a>
+        <a href="credits.html" class="nav-link">Credits</a>
+      </div>
+      <div class="nav-menu-btn" id="menuBtn">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-link">Works</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="oak.html" class="mobile-link">The Creator</a>
+      <a href="credits.html" class="mobile-link">Credits</a>
+    </div>
+  </div>
+
+  <main class="inner-page">
+    <div class="inner-hero">
+      <div class="inner-hero-bg">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+      </div>
+      <div class="section-label reveal-up"><span>— Our Story</span></div>
+      <h1 class="inner-title reveal-up">About<br><em>OAK Creations</em></h1>
+    </div>
+
+    <div class="inner-content" id="aboutContent">
+      <div class="inner-prose reveal-up" id="aboutBody">
+        <!-- Populated by JS -->
+        <div class="content-placeholder">
+          <div class="ph-line ph-long"></div>
+          <div class="ph-line ph-med"></div>
+          <div class="ph-line ph-long"></div>
+          <div class="ph-line ph-short"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="assets/oak-tree.png" alt="OAK" />
+        <span>OAK <em>Creations</em></span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Works</a>
+        <a href="about.html">About</a>
+        <a href="oak.html">The Creator</a>
+        <a href="credits.html">Credits</a>
+      </div>
+      <p class="footer-copy" id="footerCopy">© 2025 OAK Creations. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

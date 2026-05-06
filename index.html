@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OAK Creations</title>
+  <meta name="description" content="OAK Creations — where ideas become extraordinary." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Tenor+Sans&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/oak-tree.png" alt="OAK" class="nav-logo-icon" />
+        <span class="nav-logo-text">OAK <em>Creations</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Works</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="oak.html" class="nav-link">The Creator</a>
+        <a href="credits.html" class="nav-link">Credits</a>
+      </div>
+      <div class="nav-menu-btn" id="menuBtn">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-link">Works</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="oak.html" class="mobile-link">The Creator</a>
+      <a href="credits.html" class="mobile-link">Credits</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-rings">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="eyebrow-line"></span>
+        <span>Digital Craftsmanship</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-title reveal-up" style="--delay: 0.1s">
+        <span class="hero-title-line">Ideas</span>
+        <span class="hero-title-line italic">grown</span>
+        <span class="hero-title-line">into reality.</span>
+      </h1>
+      <p class="hero-sub reveal-up" style="--delay: 0.2s" id="heroTagline">
+        A collection of carefully crafted digital experiences.
+      </p>
+      <a href="#works" class="hero-cta reveal-up" style="--delay: 0.3s">
+        <span>Explore the works</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3L13 8L8 13M3 8H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="hero-logo-wrap reveal-up" style="--delay: 0.4s">
+      <img src="assets/oak-tree.png" alt="OAK Creations" class="hero-logo-img" />
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section class="works" id="works">
+    <div class="works-header">
+      <div class="section-label reveal-up">
+        <span>— The Catalogue</span>
+      </div>
+      <h2 class="works-title reveal-up">Every creation<br><em>tells a story.</em></h2>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar reveal-up" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All Works</button>
+      <button class="filter-btn" data-filter="website">Websites</button>
+      <button class="filter-btn" data-filter="app">Apps</button>
+      <button class="filter-btn" data-filter="other">Other</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Populated by JS from Gist data -->
+      <div class="projects-loading" id="projectsLoading">
+        <div class="loading-oak">
+          <img src="assets/oak-tree.png" alt="" />
+        </div>
+        <p>Loading creations…</p>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div class="projects-empty hidden" id="projectsEmpty">
+      <p>No projects here yet. Check back soon.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="assets/oak-tree.png" alt="OAK" />
+        <span>OAK <em>Creations</em></span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Works</a>
+        <a href="about.html">About</a>
+        <a href="oak.html">The Creator</a>
+        <a href="credits.html">Credits</a>
+      </div>
+      <p class="footer-copy" id="footerCopy">© 2025 OAK Creations. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-inner" id="modalInner"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
